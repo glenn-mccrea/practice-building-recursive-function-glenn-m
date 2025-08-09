@@ -39,5 +39,41 @@ console.log(reverseString("recursion"));
 console.log(reverseString("a"));
 console.log(reverseString("")); 
 
+
+
+
+/* First Call: reverseString("hello")
+
+    Last character: o
+    Calls: reverseString("hell")
+
+Second Call: reverseString("hell")
+
+    Last character: l
+    Calls: reverseString("hel")
+
+Third Call: reverseString("hel")
+
+    Last character: l
+    Calls: reverseString("he")
+
+Fourth Call: reverseString("he")
+
+    Last character: e
+    Calls: reverseString("h")
+
+Fifth Call: reverseString("h")
+
+    Base case reached (length is 1), returns "h" */
+
+
+//Then as it unwinds, we get:
+
+  /*   Fifth Call returns: "h"
+    Fourth Call returns: "e" + "h" → "eh"
+    Third Call returns: "l" + "eh" → "leh"
+    Second Call returns: "l" + "leh" → "lleh"
+    First Call returns: "o" + "lleh" → "olleh" */
+
  
 
